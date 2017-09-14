@@ -1,0 +1,142 @@
+<title>新闻中心</title>
+
+	<!--banner_ad 横幅轮播图-->
+	<div class="banner_ad">
+
+		<div class="banner" id="banner">
+			<div class="pages" data-scro="list">
+				<ul>
+					<foreach name="list2" item="v">
+					<li class="item" style="left: 0px;"><img src="__ROOT__/{$v.images}"></li>
+				   </foreach>
+				</ul>
+			</div>
+
+			<div class="controler" data-scro="controler">
+				<b class="down"></b> <b></b> <b></b>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<!--页面内容-->
+	<div class="content">
+		<!--内容背景为第一种的时候 -->
+		<div class="content_type_one">
+
+			<!--为内容里面的内容-->
+			<div class="content_body">
+				<div class="background_orange"></div>
+				<div class="background_gray"></div>
+				<!--侧导航-->
+				<div class="kongzhi">
+					<div class="sidebar">
+						<div class="sidebar_top">
+
+
+							<div class="sidebar_title">
+								<p class="chinese">新闻中心</p>
+								<p class="english">NEWS</p>
+							</div>
+
+
+							<div class="sidebar_list">
+
+								<ul>
+									<foreach name="category" item="v">
+									    <if condition="$id eq $v['id']">
+									    <li class="list_inthis"><a href="{:U('News/NewsCenter',array('id'=>$v['id']))}" class="list_a_inthis">{$v.name}</a></li>
+									    <else />
+									    <li><a href="{:U('News/NewsCenter',array('id'=>$v['id']))}">{$v.name}</a></li>
+									    </if>
+									</foreach>
+									<span class="clear_float"></span>
+								</ul>
+
+							</div>
+
+							<div class="sidebar_title sidebar_title_margin">
+								<p class="chinese">联系我们</p>
+								<p class="english">contact us</p>
+							</div>
+
+
+
+						</div>
+
+
+						<div class="sidebar_bottom">
+							<p class="onlinefirst">在线客服一：QQ{$list1.servicea}</p>
+							<p class="onlinesecend">在线客服二：QQ{$list1.serviceb}</p>
+							<p class="telphone">联系电话：{$list1.phone}</p>
+							<p class="email">邮箱：{$list1.email}</p>
+						</div>
+
+
+
+
+					</div>
+
+					<!--内容的右侧-->
+					<div class="content_body_right">
+						<div class="right_title">
+							<span class="titlename">新闻中心</span> 
+                            <span class="current_location">当前位置>新闻中心</span> 
+                            <span class="clear_float"></span>
+						</div>
+
+                    <foreach name="list" item="v">
+						<div class="newscenter_show">
+							<div class="newscenter_show_top">
+								<div class="img_show">
+									<img src="__ROOT__/{$v.thumb_img}" />
+								</div>
+								<div class="newsconter_content">
+									<div class="newscenter_show_title">
+										<a class="title" href="{:U('News/NewsCenterDetails',array('id'=>$v['id']))}">{$v.title}</a>
+                                        <span class="date">发布时间：{$v.time}</span><span class="clear_float"></span>
+									</div>
+									<p>{$v.des}</p>
+								</div>
+								<div class="clear_float"></div>
+							</div>
+							<div class="newscenter_show_bottom">
+								<a href="{:U('News/NewsCenterDetails',array('id'=>$v['id']))}"><span class="readall">阅读全文</span>
+                                <span class="clear_float"></span></a>
+							</div>
+						</div>
+                   </foreach>
+			
+
+						<!--底部分页-->
+						<div class="paging">
+							<!-- <a href="">首页</a> 
+                            <a href="">上一页</a> 
+                            <a href="" class="digital">1 </a> 
+                           	<a href="" class="digital"> 2 </a> 
+                           	<a href="" class="digital">3 </a> 
+                            <a href="" class="digital"> 4 </a> 
+                            <a href="" class="digital">5 </a> 
+                            <a href=""> 下一页 </a> 
+                            <a href=""> 末页</a> -->
+                            {$page}
+						</div>
+
+
+					</div>
+
+					<div class="clear_float"></div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+
+

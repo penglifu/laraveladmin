@@ -1,0 +1,103 @@
+
+    <title>Banner修改</title>
+    <div class="content-box">
+      <!-- Start Content Box -->
+      <div class="content-box-header">
+        <h3>Content box</h3>
+        <ul class="content-box-tabs">
+            <!-- href must be unique and match the id of target div -->
+            <li><a href="#tab2" class="default-tab">Forms</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <!-- End .content-box-header -->
+      <div class="content-box-content">    
+        <div class="tab-content default-tab" id="tab2">
+          <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+            <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+            <p>
+              <label>标题</label>
+              <input class="text-input small-input" type="text"  name="title" value="{$arr.title}" />
+            </p>  
+			<style>
+			  
+			  #main-content .images_list {padding-top:30px;  overflow:hidden;}
+			  #main-content .images_list li{list-style: none; margin-left:15px; padding:0; position: relative;width:100px; height:100px;float:left;}
+			  #main-content .images_list li img{width:100px;height:100px; overflow:hidden;}
+			  #main-content .images_list li div{width:100px;height:100px;
+			                          display: none;
+									  position: absolute;
+									  left: 0;top: 0;
+									  background-color: rgba(100,140,120,0.4);
+									 float: left;} 
+			  #main-content  .images_list li div img{ width: 30px;
+										   height: 30px; 
+										   position: absolute;
+										   top:-15px;right:-15px;
+										  }
+			 #main-content  .images_list li:hover div{display: block; cursor: pointer;} 
+			</style>
+            <div>
+              <label>原图显示</label>
+              <ul class="images_list">
+                 <li>
+	              <img alt="上传图片" src="__ROOT__/{$arr.images}" class="img" >
+	              <div><img src="__ROOT__/fancy_close.png" class="delete" /></div>
+	              <input type="hidden"   name="images_old" value="1" />
+                 </li>
+              </ul>
+            </div>
+            <div>
+              <label>修改图片</label>
+              <input type="file"   name="images" />
+               <ul class="images_list  images_new">
+                 
+              </ul>
+            </div>
+            <p>
+              <input class="button" type="submit" value="Submit" />
+            </p>
+            </fieldset>
+            <div class="clear"></div>
+            <!-- End .clear -->
+          </form>
+        </div>
+        <!-- End #tab2 -->
+      </div>
+      <!-- End .content-box-content -->
+    </div>
+    <!-- End .content-box -->
+    <script type="text/javascript">
+    $("input[type='file']").change(function(){   
+    	 var file = this.files[0]; //监听其中的一张图
+    	   if (window.FileReader) {    
+    	            var reader = new FileReader();    
+    	            reader.readAsDataURL(file);    
+    	            //监听文件读取结束后事件    
+    	          reader.onloadend = function (e) {
+    	                  //e.target.result就是监听的图片地址
+    	                  
+    	                  var str="";
+    	                  str+='<li>'; 
+    	                  str+='<input type="hidden"   name="images" value="2" />';
+    	                  str+='<img alt="上传图片" src="'+e.target.result+'" class="img" >';
+    	                  str+='<div><img src="__ROOT__/fancy_close.png" class="delete" /></div>';
+    	                  str+='</li>';
+    	                  $(".images_new").append(str);
+    	            };   
+                  
+                  
+    	       }
+    	})
+    	
+		$(".delete").live("click",function(){
+		
+		  $(this).parent().parent().remove();
+		
+		
+		
+		})
+    	
+
+    </script>

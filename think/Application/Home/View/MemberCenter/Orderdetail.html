@@ -1,0 +1,268 @@
+
+
+<title>订单详情</title>
+	<!--页面内容-->
+	<div class="content">
+		<!--内容背景为第二种的时候 -->
+		<div class="content_type_two">
+
+			<!--为内容里面的内容-->
+			<div class="content_body">
+				<div class="background_orange"></div>
+				<div class="background_coffee "></div>
+				<div class="kongzhi">
+
+					<!--侧导航-->
+					<div class="sidebar">
+						<div class="sidebar_top">
+
+
+							<div class="sidebar_title">
+								<p class="chinese">会员中心</p>
+								<p class="english">Brand introduction</p>
+							</div>
+
+
+							<div class="sidebar_list ">
+
+								
+								<ul>
+									
+						             <li class="list_inthis"><a  class="list_a_inthis">订单详情</a></li>
+									  
+									<span class="clear_float"></span>
+								</ul>
+								
+
+							</div>
+
+
+
+
+
+						</div>
+
+
+
+
+
+					</div>
+
+					<!--内容的右侧-->
+					<div class="content_body_right">
+						<div class="right_title">
+							<span class="titlename">购买记录</span> <span
+								class="current_location">当前位置 >订单详情</span> <span
+								class="clear_float"></span>
+						</div>
+
+						<div class="makesure_order_add">
+							<p class="guide">
+								<a>查看订单</a><a class="inthis">订单详情</a>
+							</p>
+
+							<form method="post" action="">
+							    <span style="font-size:20px;margin-left:90px;">订单号：{$details.ordernum}</span>
+								<div class="sure_add">
+									<p class="address_text">收货地址</p>
+
+									<div class="address_box">
+										<div class="show">
+											
+                                            <span>{$details.address}</span>
+                                                                                                                                   （<span>{$details.name}（女士/先生）</span> 收）
+                                            <span>电话：{$details.phone}</span>
+										</div>
+
+									</div>
+								   
+								</div>
+
+								<div class="order_info">
+									<p class="info_text">订单信息</p>
+									<p class="title">
+										<span class="pro_show">宝贝</span>
+                                        <span class="price">单价</span>
+                                        <span class="number">数量</span>
+                                        <span class="subtotal">小计（元）</span>
+									</p>
+								
+                                
+									<div class="list_info_content">
+										<div class="content_left">
+											<div class="img">
+											    
+												<img src="__ROOT__/{$details['images']}" />
+											</div>
+											<div class="info_text">{$details.des}</div>
+											
+											<span class="price  pricenum">{$details.promotion_price}</span> 
+											
+                                            <span class="numbers_override" id="makesure_page">
+                                            <span ></span>
+                                            <input value="{$details.number}" min="1" type="text" class="inputnum" name="number[]" readonly="readonly" />
+                                            <span ></span>
+                                            </span> 
+                                            <span class="clear_float"></span>
+										</div>
+
+										<div class="content_mid">
+                                            
+											<a class="curr_price curr_price1">{$details.price}</a> 
+                                            <span></span>
+										</div>
+
+										<div class="clear_float"></div>
+
+
+									</div>
+						            <p class="discount">
+										卖家促销： 
+                                        <span>{$details.chuxiao}</span>
+
+									</p>
+									<p class="discount">
+										店铺优惠： 
+                                        <span>{$details.discount}</span>
+
+									</p>
+
+                          
+									<p class="discount">
+										运送方式: 
+                                        <span>{$details.peishong}</span>
+									</p>
+									
+									
+
+
+
+
+								</div>
+
+
+							</form>
+
+
+						</div>
+
+
+
+
+					</div>
+
+					<div class="clear_float"></div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+		  <script>
+		  $(".add").click(function(){
+			var num=$(this).prev().val();
+			  num++;
+			//alert(num);
+			var price=$(".pricenum").html();
+			//alert(price)
+			var pricenumber=num*price ;
+			//alert(pricenumber);
+			$(this).parent().parent().siblings(".content_mid").children(".curr_price").html(pricenumber);
+			
+			/* $(".totals").html(pricenumber);  */
+			totals();  
+			  
+		  })
+		  
+		  
+		   $(".reduce").click(function(){
+			var num=$(this).next().val();
+			  num--;
+			//alert(num);
+			var price=$(".pricenum").html();
+			
+			var pricenumber=num*price ;
+			//alert(pricenumber);
+			
+			$(this).parent().parent().siblings(".content_mid").children(".curr_price").html(pricenumber);
+			  
+			totals(); 
+		  })
+		  
+		   $("input[type='submit']").click(function(){
+			 
+			 var status = $("input[type='radio']").is(":checked");
+			 if(!status){
+				 alert("请选择地址");
+				 return false;
+			 }
+			 
+			 
+		 }) 
+		   /* function totals(){
+			    	var count=0;
+			    	var length = $("input[class='inputnum']").length;
+			    
+			    	//循环添加选中的价格累计 
+			    	for(var i=0;i<length;i++){
+			    		//i为下标 从零开始 ，长度从一开始  所以下标小于长度 
+			    	   count += parseInt($(".curr_price1").eq(i).html());
+			    	  //alert($(".curr_price1").eq(i).html())
+			    	}
+			    	//alert(count);
+	    	      
+	    	       $(".totals").html(count);
+	    	       $(".totals").attr("value",count);
+	    	      
+		    	}
+		  totals(); */
+		 
+		  
+		  
+		  
+		   $(".delete").click(function(){
+	    	   var id=$(this).siblings(".de").val();
+	    	   var url="{:U('MemberCenter/MakeSureTheOrderAndTheAddress')}";
+	    	   $.ajax({
+				   //传参类型：input框一般为post
+		              type:"post",
+		              url:url,//访问页面的超链接地址
+		              data:{id:id},//传参的数据，验证码
+		              success:function(msg){
+		            	
+		            	  if(msg==0){
+		            	    alert("删除成功！ ");  
+		            	  }else {
+		            	    alert("删除失败！ ");    
+		            		  
+		            	  }
+				   
+		              }
+				   
+			   }) 
+	    	   
+	    	  
+	    	   
+	       })
+	       
+	      $(".submit1").click(function(){ 
+	    	  var id=$(".id1").val();
+	    	 if(!id){
+	    		 alert("请添加选择商品 ");
+	    		return false; 
+	    	 }
+	    	  
+	    	  
+	      })
+	       
+	       
+	       
+		  </script>
+		
+
+

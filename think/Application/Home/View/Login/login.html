@@ -1,0 +1,52 @@
+ {__NOLAYOUT__}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base href="__ADMIN_BASE__" />
+<link rel="stylesheet" type="text/css" href="css/base_ducvy.css"> 
+<script type="text/javascript" src="js/jQuery.1.8.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!-- 引入验证插件  -->
+<script type="text/javascript"  src="__ROOT__/valite/js/Validform_v5.3.2_min.js"></script>
+<title>用户登录</title>
+</head>
+
+<body>
+	<div class="content">
+    	<div class="login_content">
+            <div class="login_regist_background">
+                 <div class="login_background">
+                 </div>
+                 <div class="formlist">	
+                    <span class="viplogin">新用户登录</span>
+                    <form method="post" action=""  class="message">
+                       <p>
+                        <input class="uname" name="username" type="text" value="手机/会员名/邮箱" datatype="*3-14" nullmsg="用户名不能为空" errormsg="用户名长度为3-14位" ></input>
+                       </p> 
+                       <p>
+                        <input class="upassword"  name="password" type="password"  datatype="*5-12" nullmsg="密码不能为空" errormsg="长度大于等于5小于等于12"></input>
+                       </p> 
+                        <div class="link"><a href="{:U('Login/getpassword')}">忘记密码？</a><a href="__MODULE__/Regist/regist">免费注册</a><a class="clear_float"></a></div>
+                        <input class="submit" type="submit" value="登               陆"></input>
+                       
+                    </form>
+                 </div>
+                 
+                 <span class="copyright">Copyright 2008-2015 vip.com，All Rights Reserved ICP证：粤 B2-20080329</span>
+            </div>
+		</div>
+    </div>
+
+</body>
+</html>
+
+	<script>
+	$(".message").Validform({
+		      tiptype:3,
+		      showAllError:true,
+		
+		});	
+		
+	
+	</script>

@@ -1,0 +1,154 @@
+
+
+
+<title>个人资料</title>
+
+	<!--页面内容-->
+	<div class="content">
+		<!--内容背景为第二种的时候 -->
+		<div class="content_type_two">
+
+			<!--为内容里面的内容-->
+			<div class="content_body">
+				<div class="background_orange"></div>
+				<div class="background_coffee "></div>
+				<div class="kongzhi">
+					<!--侧导航-->
+					<div class="sidebar">
+						<div class="sidebar_top">
+
+
+							<div class="sidebar_title">
+								<p class="chinese">会员中心</p>
+								<p class="english">Brand introduction</p>
+							</div>
+
+
+							<div class="sidebar_list ">
+
+								<ul>
+									<foreach name="side" item="v" >
+									 <if condition="$v.he eq 0">
+									   <eq name="Think.ACTION_NAME" value="$v['en']" > 
+									        
+									          <li class="list_inthis"><a href="__MODULE__/{$v.url}" class="list_a_inthis">{$v.name}</a></li>
+									     
+									          
+									        
+									    <else />
+									         <li><a href="__MODULE__/{$v.url}">{$v.name}</a></li>    
+									   </eq>
+									</if>   
+									</foreach>
+									<span class="clear_float"></span>
+								</ul>
+
+							</div>
+
+
+
+
+
+						</div>
+
+
+
+
+
+					</div>
+
+					<!--内容的右侧-->
+					<div class="content_body_right">
+						<div class="right_title">
+							<span class="titlename">个人资料修改/查看</span> <span
+								class="current_location">当前位置 >会员中心</span> <span
+								class="clear_float"></span>
+						</div>
+
+						<div class="personal_date_modify_view">
+							<form action="" method="post" enctype="multipart/form-data" class="message">
+								<p class="head_pic">
+									<span>头 像：</span>
+									<div style="border:1px solid #000;width:150px;height:150px;margin-left:150px;">
+									<img alt="上传头像" src="__ROOT__/{$nick.images}" class="img" style="width:150px;height:150px;" >
+									</div>
+									<a style="margin-left:200px;">选择头像</a>
+                                    <input type="file"   name="images"  />
+								</p>
+								<style>
+								.divin{margin-left:50px;}
+								.inpu{width:200px;height:30px;}
+								
+								</style>
+								<div class="divin">
+									<span>昵 称：</span><input class="inpu" name="username" value="{$nick.username}" datatype="*" nullmsg="昵 称不能为空" ajaxurl="{:U('MemberCenter/PersonalDateModifyView',array('id'=>$nick['id']))}" />
+								</div>
+								<div class="divin">
+									<span>邮 箱：</span><input class="inpu" name="email" value="{$nick.email}" datatype="e" nullmsg="email不能为空" errormsg="email格式错误" ajaxurl="{:U('MemberCenter/PersonalDateModifyView',array('id'=>$nick['id']))}"/>
+								</div>
+								<div class="divin">
+									<span>Q Q：</span><input class="inpu" name="qq" value="{$nick.qq}" datatype="n" nullmsg="qq不能为空"  ajaxurl="{:U('MemberCenter/PersonalDateModifyView',array('id'=>$nick['id']))}"/>
+								</div >
+								<div class="divin">
+									<span>电话：</span><input class="inpu" name="phone" value="{$nick.phone}" datatype="m" nullmsg="电话不能为空" errormsg="号码长度为11位数" ajaxurl="{:U('MemberCenter/PersonalDateModifyView',array('id'=>$nick['id']))}" />
+								</div>
+								<div class="sex divin">
+								
+									<span>性 别：</span>
+									<if condition="$nick['sex'] == 1">
+										<input name="sex" value="1" type="radio" checked="checked"/><a>男</a>
+									    <input name="sex" value="2" type="radio" /><a>女</a>
+									<else />
+									    <input name="sex" value="1" type="radio" /><a>男</a>
+										<input name="sex" value="2" type="radio" checked="checked" /><a>女</a>
+									</if>
+								</div>
+								<p class="submit">
+									<input type="submit" value="修改" />
+								</p>
+							</form>
+						</div>
+
+
+
+
+					</div>
+
+					<div class="clear_float"></div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+    <script type="text/javascript">
+    $("input[type='file']").change(function(){   
+    	 var file = this.files[0]; //监听其中的一张图
+    	   if (window.FileReader) {    
+    	            var reader = new FileReader();    
+    	            reader.readAsDataURL(file);    
+    	            //监听文件读取结束后事件    
+    	          reader.onloadend = function (e) {
+    	            $(".img").attr("src",e.target.result);    //e.target.result就是监听的图片地址
+    	            };   
+
+    	       }
+    	})
+    	
+     $(".message").Validform({
+		  //alert(1);
+		      tiptype:3,
+		      showAllError:true,
+		
+		});	
+    	
+    	
+    </script>
+
+
+
+
+

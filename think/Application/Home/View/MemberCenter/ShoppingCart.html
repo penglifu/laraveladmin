@@ -1,0 +1,451 @@
+
+
+<title>购物车</title>
+	<!--页面内容-->
+	<div class="content">
+		<!--内容背景为第二种的时候 -->
+		<div class="content_type_two">
+
+			<!--为内容里面的内容-->
+			<div class="content_body">
+				<div class="background_orange"></div>
+				<div class="background_coffee "></div>
+				<div class="kongzhi">
+					<!--侧导航-->
+					<div class="sidebar">
+						<div class="sidebar_top">
+
+
+							<div class="sidebar_title">
+								<p class="chinese">会员中心</p>
+								<p class="english">Brand introduction</p>
+							</div>
+
+
+							<div class="sidebar_list ">
+
+								<ul>
+									<foreach name="side" item="v" >
+									 <if condition="$v.he eq 0">
+									   <eq name="Think.ACTION_NAME" value="$v['en']" > 
+									        
+									          <li class="list_inthis"><a href="__MODULE__/{$v.url}" class="list_a_inthis">{$v.name}</a></li>
+									     
+									          
+									        
+									    <else />
+									         <li><a href="__MODULE__/{$v.url}">{$v.name}</a></li>    
+									   </eq>
+									</if>   
+									</foreach>
+									<span class="clear_float"></span>
+								</ul>
+
+							</div>
+
+
+
+
+
+						</div>
+
+
+
+
+
+					</div>
+
+					<!--内容的右侧-->
+					<div class="content_body_right">
+						<div class="right_title">
+							<span class="titlename">购买记录</span> <span
+								class="current_location">当前位置 >会员中心</span> <span
+								class="clear_float"></span>
+						</div>
+
+						<div class="purchase_records">
+							<p class="guide">
+								<a class="inthis">查看购物车</a><a>填写和确认地址订单</a><a>提交订单成功</a>
+							</p>
+
+
+							<!--定单列表详情-->
+							<div class="order_list">
+								<p class="title">
+									<span class="pro_show">宝贝</span><span class="price">单价（元）</span><span
+										class="number">数量</span><span class="operation">商品操作</span><span
+										class="trading_status">交易状态</span>
+								</p>
+
+								<form method="get" action="{:U('MemberCenter/MakeSureTheOrderAndTheAddress')}">
+
+									<!--一个购物记录的模型-->
+
+
+									<div class="list_show" id="list_show_content">
+										
+
+
+
+								   <foreach  name="list"  item="v">
+										<div class="list_info">
+											<p class="list_info_title">
+												<input type="checkbox" name="checkbox[]" class="box"  value="{$v.id}" /><span class="date">{$v.time}</span><span
+												class="order_number">订单号：{$v.ordernum}</span>
+											</p>
+											<div class="list_info_content">
+												<div class="content_left">
+													<div class="img">
+													  
+														<img src="__ROOT__/{$v.images}" />
+													  
+													</div>
+													<div class="info_text">
+														<a href="{:U('Product/ProductCenterDetails',array('id'=>$v['product_id']))}">{$v.des} </a></div>
+													<span class="price">{$v.promotion_price}</span>
+													<span class="numbers_override">
+													<span ></span>
+													<input value="{$v.number}" min="1" type="text" class="min"   readonly="readonly" />
+													<span ></span></span>
+												</div>
+												<div class="content_mid">
+													<a class="ori_price">{$v.price}</a>
+												    <a class="curr_price">{$v.total_value}</a>
+												    
+												    
+													<a class="promotion" >卖家促销</a>
+												</div>
+												<div class="content_right">
+													<a class="add_favorite  favoriteone">移入收藏夹</a> <a class="delete de" href="javascript:">删除</a>
+                                                    <input type="hidden" class="hidden" value="{$v.id}"   />
+                                                    
+												</div>
+												<div class="clear_float"></div>
+											</div>
+										</div>
+									
+                                    </foreach>
+
+                                </div>
+
+									<!--底部分页-->
+									<div class="paging">
+                                          {$page}
+										<!-- <a href="" class="up_down_page">上一页</a> <a href="" 	class="up_down_page"> 下一页 </a> -->
+
+									</div>
+									
+									<div class="accounts_box">
+										 <input type="checkbox" id="all" />
+										 <span>全选</span>
+										 <span class="alldelete">删除</span>
+										 <span class="favorite">移入收藏夹</span>
+										 <span class="nub">已选商品<a>0</a>件</span> 
+										 <span class="count">合计（不含运费）<a>￥00.0</a>
+										 <input type="hidden" value="" name="price"  />
+										 </span> 
+										 
+										 <input	value="结算" type="submit" />
+									</div>
+
+
+
+								</form>
+
+
+
+							</div>
+
+
+
+
+
+
+
+						</div>
+
+
+
+
+					</div>
+
+					<div class="clear_float"></div>
+
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+	
+	
+	
+	
+
+	
+			     <script type="text/javascript">
+				 $(function(){
+			      function coun(){
+			    	var count=0;
+			    	var curr = $(".list_info_title input:checked");//获取当前input默认 
+			    	var length = $(".list_info_title input:checked").length;
+			    	//循环添加选中的价格累计 
+			    	for(i=0;i<length;i++){
+				    	count += parseInt(curr.eq(i).parent().siblings(".list_info_content").children(".content_mid").children(".curr_price").html());
+				    	
+				    	}
+			    	//alert(count);
+	    	      
+	    	       $(".count").children().html(count);
+	    	       $(".count").children().attr("value",count);
+	    	       
+	    	       var length = $(".list_info_title input:checked").length;
+			    	//alert(length);
+			    	$(".nub").children().html(length);
+		    	}
+			    
+			      
+			     
+			     $(".add").click(function(){
+						var num=$(this).prev().val();
+						  num++;
+						//alert(num);
+						$(this).prev().attr("value",num);
+						var price=$(this).parent().prev().html();
+						//alert(price)
+						var pricenumber=num*price ;
+						//alert(pricenumber);
+						$(this).parent().parent().siblings(".content_mid").children(".curr_price").html(pricenumber);
+						$(this).parent().parent().siblings(".content_mid").children(".curr_price").attr("value",pricenumber);
+						/* $(".totals").html(pricenumber);  */
+						var status = $(this).parent().parent().parent().siblings(".list_info_title").children(".box").is(":checked"); 
+						 //alert(status);
+						 if(status){
+							 
+							 coun(); 
+						 }
+						
+						  
+					  })
+			     
+			     $(".reduce").click(function(){
+						var num=$(this).next().val();
+						  num--;
+						//alert(num);
+						$(this).next().attr("value",num);
+						var price=$(this).parent().prev().html();
+						//alert(price)
+						var pricenumber=num*price ;
+						//alert(pricenumber);
+						$(this).parent().parent().siblings(".content_mid").children(".curr_price").html(pricenumber);
+						$(this).parent().parent().siblings(".content_mid").children(".curr_price").attr("value",pricenumber);
+						/* $(".totals").html(pricenumber);  */
+						var status = $(this).parent().parent().parent().siblings(".list_info_title").children(".box").is(":checked"); 
+						 //alert(status);
+						 if(status){
+							 
+							 coun(); 
+						 } 
+						  
+					  })
+			     
+					  
+			    $("input[type='checkbox']").click(function(){
+			    	
+			    	 coun();
+			      
+			    })
+			    
+			    
+			    
+			    $("#all").click(function(){
+			    	
+			    	 coun();
+		    		
+			    })
+			    
+			    
+			      coun();
+				 })
+			    
+			    
+			   $(".de").click(function(){
+				 var id=$(this).siblings(".hidden").val();
+				 
+				  var url="{:U('MemberCenter/ShoppingCart')}";
+				  //alert(url); 
+				   $.ajax({
+					   //传参类型：input框一般为post
+			              type:"post",
+			              url:url,//访问页面的超链接地址
+			              data:{id:id},//传参的数据，验证码
+			              success:function(msg){
+			            	
+			            	  if(msg==0){
+			            	    alert("删除成功！ ");  
+			            	  }else {
+			            	    alert("删除失败！ ");    
+			            		  
+			            	  }
+					   
+			              }
+					   
+				   }) 
+				    
+				   
+				   
+			   })
+			   
+			   
+			   //删除选中所有 
+		 $(".alldelete").click(function(){
+			    	 //获取input选中个数 
+			   var length = $(".list_info_title input:checked").length;	 
+			    	 //alert(length); 
+			    var id1="";
+			    for(i=0;i<length;i++){
+				  id1+=$(".hidden").eq(i).val()+",";
+			    } 
+			    var id=id1.substr(0,id1.length-1); 
+			    //alert(id);
+				   var url="{:U('MemberCenter/ShoppingCart')}";
+				  //alert(url); 
+				   $.ajax({
+					   //传参类型：input框一般为post
+			              type:"post",
+			              url:url,//访问页面的超链接地址
+			              data:{id:id},//传参的数据，验证码
+			              success:function(msg){
+			            	//alert(msg);
+			            	  if(msg==0){
+			            	    alert("删除成功！ ");  
+			            	  }else {
+			            	    alert("删除失败！ ");    
+			            		  
+			            	  }
+					   
+			              }
+					   
+				   }) 
+				     
+				   
+				   
+			   }) 
+			   
+			   
+			   //收藏夹 
+			  $(".favorite").click(function(){
+				
+				  //alert(1);
+				  	 //获取input选中个数 
+				   var length = $(".list_info_title input:checked").length;
+				  	 if(length>0){
+				    	 //alert(length); 
+				    var id1="";
+				    for(i=0;i<length;i++){
+					  id1+=$(".hidden").eq(i).val()+",";
+				    } 
+				    var id=id1.substr(0,id1.length-1); 
+				    
+				    var color1="";
+				    for(i=0;i<length;i++){
+				    	color1+=$(".color").eq(i).val()+",";
+				    } 
+				    var color=color1.substr(0,color1.length-1); 
+				    
+				    
+				    //alert(id);
+					   var url="{:U('MemberCenter/Favorite')}";
+					  //alert(url); 
+					   $.ajax({
+						   //传参类型：input框一般为post
+				              type:"post",
+				              url:url,//访问页面的超链接地址
+				              data:{id:id,color:color},//传参的数据，验证码
+				              success:function(msg){
+				            	//alert(msg);
+				            	
+				            if(msg==3){
+				            	alert("收藏夹已满！  ");
+				            }else{
+				            	if(msg==2){
+				            		alert("请勿重复添加！  ");
+				            		
+				            	}else{
+				            	  if(msg==0){
+				            	    alert("添加成功！ ");  
+				            	  }else {
+				            	    alert("添加失败 ！ ");    
+				            		  
+				            	  }
+				            	  
+				            	}  
+						   
+				              }
+				            }	
+					   }) 
+					     
+				  	 }else{
+				  		alert("请添加商品 ！ ");
+				  		return false ;
+				  	 }
+			  })
+			   
+			   
+			 $(".favoriteone").click(function(){
+				 //获取单条id 
+				 var id=$(this).siblings(".hidden").val();
+				 var color=$(this).siblings(".color").val();
+				 //alert(color);
+				 var url="{:U('MemberCenter/Favorite')}";
+				 // alert(url); 
+				  $.ajax({
+					   //传参类型：input框一般为post
+			              type:"post",
+			              url:url,//访问页面的超链接地址
+			              data:{id:id,color:color},//传参的数据，验证码
+			              success:function(msg){
+			            	//alert(msg);
+	            	  if(msg==3){
+			            	alert("收藏夹已满！  ");
+			            }else{
+			            	if(msg==2){
+			            		alert("请勿重复添加！  ");
+			            		
+			            	}else{
+			            	  if(msg==0){
+			            	    alert("添加成功！ ");  
+			            	  }else {
+			            	    alert("添加失败 ！ ");    
+			            		  
+			            	  }
+			            	  
+			            	}  
+					   
+			              }
+			           } 
+				   }) 
+				     
+				  
+				 
+				 
+			 })
+			   
+			$("input[type='submit']").click(function(){
+				
+				var length = $(".list_info_title input:checked").length;
+				if(length<1){
+					
+					alert("请选择商品！")
+				return false;	
+				}
+				
+				
+			})
+			     </script>
+
+

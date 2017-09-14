@@ -1,0 +1,58 @@
+<title>首页</title>
+	<!--首页面-->
+	<div class="indexcontent">
+		
+			<div class="link_cloth">
+            	<div class="link_one link_one_margin">
+                	<p></p>
+                    <div class="link">
+                    	<a href="{:U('Product/ProductCenterDetails',array('id'=>$list7['id']))}">  
+                            <div><img src="__ROOT__/{$list7['images'][0]}" /></div>
+                            <div class="text">
+                                <span>{$one.name}</span>
+                                <foreach name="list7['introduce']" item="v">
+                                <span>{$v}</span>
+                                </foreach>
+                            </div>
+                         </a> 
+                    </div>
+                </div>
+                
+                <div class="link_one" >
+                	<p></p>
+                    <div class="link">
+                    	<a href="{:U('Product/ProductCenterDetails',array('id'=>$list8['id']))}">  
+                            <div><img src="__ROOT__/{$list8['images'][0]}" /></div>
+                            <div class="text">
+                                <span>{$two.name}</span>
+                                <foreach name="list8['introduce']" item="v">
+                                <span>{$v}</span>
+                                </foreach>
+                            </div>
+                         </a> 
+                    </div>
+                </div>
+                
+                <div class="link_one link_one_floatright">
+                	<p></p>
+                    <div class="link">
+                         <a href="{:U('Product/ProductCenterDetails',array('id'=>$list9['id']))}">  
+                            <div><img src="__ROOT__/{$list9['images'][0]}" /></div>
+                            <div class="text">
+                                <span>{$three.name}</span>
+                                <foreach name="list9['introduce']" item="v">
+                                <span>{$v}</span>
+                                </foreach>
+                            </div>
+                         </a> 
+                    </div>
+                </div>
+                
+                <div class="clear_float"></div>
+            
+            </div>
+
+
+	</div>
+
+

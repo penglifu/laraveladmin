@@ -1,0 +1,371 @@
+<title>产品详情</title>
+	<!--banner_ad 横幅轮播图-->
+	<div class="banner_ad">
+
+		<div class="banner" id="banner">
+			<div class="pages" data-scro="list">
+				<ul>
+					<foreach name="list2" item="v">
+					<li class="item" style="left: 0px;"><img src="__ROOT__/{$v.images}"></li>
+				   </foreach>
+				</ul>
+			</div>
+
+			<div class="controler" data-scro="controler">
+				<b class="down"></b> <b></b> <b></b>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<!--页面内容-->
+	<div class="content">
+		<!--内容背景为第一种的时候 -->
+		<div class="content_type_one">
+
+			<!--为内容里面的内容-->
+			<div class="content_body">
+				<div class="background_orange"></div>
+				<div class="background_gray"></div>
+				<div class="kongzhi">
+					<!--侧导航-->
+					<div class="sidebar">
+						<div class="sidebar_top">
+
+
+							<div class="sidebar_title">
+								<p class="chinese">产品中心</p>
+								<p class="english">Product Center</p>
+							</div>
+
+
+							<div class="sidebar_list">
+								<ul>
+									<foreach name="category" item="v">
+									    <if condition="$categoryone eq $v['id']">
+									    <li class="list_inthis"><a href="{:U('Product/ProductCenter',array('id'=>$v['id']))}" class="list_a_inthis">{$v.name}</a></li>
+									    <else />
+									    <li><a href="{:U('Product/ProductCenter',array('id'=>$v['id']))}">{$v.name}</a></li>
+									    </if>
+									</foreach>
+									<span class="clear_float"></span>
+								</ul>
+
+							</div>
+
+							<div class="sidebar_title sidebar_title_margin">
+								<p class="chinese">联系我们</p>
+								<p class="english">contact us</p>
+							</div>
+
+
+
+						</div>
+
+
+						<div class="sidebar_bottom">
+							<p class="onlinefirst">在线客服一：QQ{$list1.servicea}</p>
+							<p class="onlinesecend">在线客服二：QQ{$list1.serviceb}</p>
+							<p class="telphone">联系电话：{$list1.phone}</p>
+							<p class="email">邮箱：{$list1.email}</p>
+						</div>
+
+
+
+
+					</div>
+
+					<!--内容的右侧-->
+					<div class="content_body_right">
+						<div class="right_title">
+							<span class="titlename">产品中心</span> 
+                            <span class="current_location">当前位置>产品中心>购买产品</span> 
+                            <span class="clear_float"></span>
+						</div>
+						<div class="product_center_details">
+							<div class="product_center_details_top">
+								<div class="cloth_show">
+									<img src="__ROOT__/{$list['arr2'][0][0]}" />
+									<p>{$list.des}</p>
+								</div>
+								<div class="cloth_info1">
+									<p class="cloth_name">{$list.title}</p>
+									<div class="price">
+										<p>
+											价格 <span class="ori_price">￥{$list.price}</span>
+										</p>
+										<p>
+											<span class="pre_price_text">促销价</span><span class="pre_price">￥{$list.promotion_price}</span>
+										</p>
+									</div>
+									
+									
+									<p class="sales_comments">
+									  <if condition="empty($sal)">
+										月销量 <span class="sales">0</span>
+									  <else/>
+									           月销量 <span class="sales">{$sal}</span>
+									  </if>
+									</p>
+									<!--- 尺码form表单   .border_red 加边框线-->
+									<div class="size_form">
+										<form method="post" action="" class="sub" >
+											<p>
+											    
+												<a class="text">厚薄 </a>
+												<!--<span status="on" class="thickness inthis">常规</span>-->
+												<foreach name="list['arr']" item="v" key="k">
+												<span status="on" class="thickness">{$v[0]}</span>
+											    <input  type="hidden" value="{$v[1]}" class="thick1" />
+											    <input name="thicknessvalue" type="hidden" value="{$k}" />
+											    </foreach>
+											   
+											</p>
+											<p>
+												<a class="text">尺码 </a>
+												<foreach name="list['arr1']" item="v" key="k">
+												<input name="sizevalue" type="hidden" value="{$k}" />
+												<span status="on" class="size">{$v[0]}</span>
+												<input  type="hidden" value="{$v[1]}" class="size1" />
+												</foreach>
+											    
+											</p>
+											<p>
+												<a class="text">颜色分类</a> 
+												<!-- <span status="on" class="color">黑色</span> -->
+												
+												  <foreach name="list['arr2']" item="v" key="k" >
+												   <input name="colorvalue" type="hidden" vaule="{$k}" />
+												   <span status="on" class="color"><img src="__ROOT__/{$v[0]}" /><span class="xiabiao">{$k}</span></span>
+											       <input  type="hidden" value="{$v[1]}" class="color1" />
+											     </foreach>
+											     
+											</p>
+											<p>
+												<a class="text">数量</a><span status="on" class="quantity">
+												<input type="number" name="number" class="input_quantity" id="count_number" /></span>
+												<span>库存<a class="repertory">{$numthick}</a></span>件 
+											</p>
+
+
+											<!--这里的两个跳转作为功能进行JS判断。当点击立即购买的时候跳转到某个action 判断。当点击加入购物车的时候跳转到某个action -->
+											<p>
+												<input type="submit" name="submit" value="立即购买" class="submit1" /> 
+                                                <input type="submit" name="submit" value="加入购物车" class="submit2" /></span>
+											</p>
+										</form>
+
+									</div>
+								</div>
+								<div class="clear_float"></div>
+							</div>
+							<!--产品中心的底部-->
+							<div class="product_center_details_bottom">
+
+								<div class="product_info2">
+									<p>
+										<span class="product_ref">产品参数：</span>
+									</p>
+
+									<p>
+										<span>材质成分: {$list.texture}</span> 
+                                        <span>销售渠道类型:{$list.distribution_channel}</span> 
+                                        <span>风格: {$list.style}</span> 
+											
+									</p>
+
+
+									<p>
+										<span>货号:{$list.article_number}</span> 
+                                        <span>服装版型:{$list.model}</span> 
+                                        <spanstyle="width:50px">厚薄:</span>
+                                        <foreach name="list['thickness']" item="v">
+										 <span style="width:50px">{$v}</span>
+                                        </foreach>
+									</p>
+
+									<p>
+										<span>品牌:{$list.trademark}</span> 
+                                        <span>组合形式: {$list.combining_form}</span> 
+                                        <span>衣长:{$list.clothes_length}</span>
+
+									</p>
+
+
+									<p>
+										<span>袖长:{$list.outside_sleeve}</span> 
+                                        <span>领子:{$list.collar}</span>
+                                        <span>袖型:{$list.outside_sleeve}</span>
+									</p>
+
+
+									<p>
+										<span>衣门襟: {$list.buckle}</span> 
+                                        <span>图案: {$list.pattern}</span> 
+                                        <span>流行元素/工艺:{$list.technology}</span>
+
+									</p>
+
+
+									<p>
+										<span>适用年龄: {$list.applicable_age}</span>
+                                        <span>年份季节: {$list.annual_seasons}</span> 
+                                        <span>颜色分类: {$list.color}</span>
+									</p>
+
+									<p>
+										<span style="width:50px">尺码:</span>
+										<foreach name="list['size']" item="v">
+										<span style="width:20px">{$v}</span>
+										</foreach>
+									</p>
+
+
+								</div>
+
+
+
+							</div>
+
+
+						</div>
+
+
+
+
+
+
+
+					</div>
+
+					<div class="clear_float"></div>
+
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+    <script type="text/javascript">
+    $(".color").click(function(){
+    	//alert(1);
+     var url= $(this).children().attr("src");
+      //alert(1);
+      $(".cloth_show").children("img").attr("src",url);    	
+    })
+    
+    $(".xiabiao").attr("style", "display:none");
+    
+    
+   
+   
+    var totals_num = $(".repertory").html();
+    
+  var num= new Array(totals_num,totals_num,totals_num);
+
+       
+	    $(".thickness").click(function(){
+	    	
+	    	var num1=$(this).next(".thick1").val();
+	    	
+	    	
+	    	 num[0] = num1;
+	    	
+	    	chang_num()
+	    	
+	    })
+	    
+	    
+	     $(".size").click(function(){
+	    	
+	    	var num2=$(this).next(".size1").val();
+	    	
+	    	 num[1] = num2;
+	    	 chang_num()
+	    })
+	    
+	    $(".color").click(function(){
+	    	
+	    	var num3=$(this).next(".color1").val();
+	    	
+	    	 num[2] = num3;
+	    	 chang_num()
+	    })
+
+	    
+	function chang_num(){
+	    	 
+	    var min_num = Math.min.apply(null, num);//数组中取最小值 
+	    $(".repertory").html(min_num);
+	   
+	    }
+   
+    
+	 
+	    $("input[name='submit']").click(function(){
+	    	
+	    	var numd =parseInt($(".repertory").html());
+	    	var content1=parseInt($(".input_quantity").val());
+	    	//alert(content1);
+	    	if(content1>numd){
+	    		
+	    		alert("数量超出库存！")
+	    		
+	    		return false;
+	    	}
+	    	
+	    	
+	         
+	    	var style=$(".thickness").attr("style");
+	    	
+	    	if(!style){
+	    		//alert(1);
+	    		alert("请选择厚薄！");
+	    		
+	    		return false;
+	    		
+	    	}
+	    	
+	       var style=$(".size").attr("style");
+	    	
+	    	if(!style){
+	    		//alert(1);
+	    		alert("请选择尺码！");
+	    		
+	    		return false;
+	    		
+	    	}
+	    	
+	       var style=$(".color").attr("style");
+	    	
+	    	if(!style){
+	    		//alert(1);
+	    		alert("请选择颜色！");
+	    		
+	    		return false;
+	    		
+	    	}
+	    	
+	    	var content=$("input[name='number']").val();
+	    	if(content<1){
+	              alert("请选择数量！");
+	    		
+	    		return false;
+	    	}
+	    	
+	    	
+	    })
+	    
+	    
+	    
+    </script>
+
+
+

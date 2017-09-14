@@ -1,0 +1,972 @@
+[ 2017-08-22T11:42:43+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T11:48:06+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+
+[ 2017-08-22T11:52:51+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-22T11:54:20+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+
+[ 2017-08-22T11:58:41+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+
+[ 2017-08-22T12:31:22+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:31:35+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-22T12:31:56+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:33:03+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+
+[ 2017-08-22T12:33:06+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:34:01+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:34:04+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-08-22T12:40:11+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:40:14+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:41:46+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT product.*,category.name FROM `product` LEFT JOIN category ON product.category = category.id  ORDER BY time DESC LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-22T12:41:48+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/69/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product` WHERE `id` = 69 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `category` WHERE ( `id`=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:41:54+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/69/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:41:57+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/69/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product` WHERE `id` = 69 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `category` WHERE ( `id`=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-08-22T12:42:19+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/69/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `product` WHERE `id` = 69 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `product` SET `title`='秋装新款时尚皮衣机车短外套',`price`='888',`promotion_price`='666',`thickness`='[\"\\u5e38\\u89c4\",\"\\u8d85\\u539a\"]',`thickrepertory`='[\"123\",\"124\"]',`size`='[\"S\",\"M\",\"L\",\"XL\"]',`sizerepertory`='[\"12\",\"12\",\"12\",\"18\"]',`texture`='粘胶纤维(粘纤)86.6%',`article_number`='M8561J153',`trademark`='MaxMartin/玛玛绨',`outside_sleeve`='长袖',`buckle`='单排扣',`applicable_age`='25-29周岁',`distribution_channel`='纯电商(只在线上销售)',`model`='直筒',`combining_form`='单件',`collar`='西装领',`pattern`='字母',`annual_seasons`='2017年秋季',`style`='街头',`clothes_length`='短款',`sleeve_style`='常规',`technology`='贴布',`color`='黑色',`category`='7',`des`='范围如何为和红日二恶烷烤肉饭h',`colorrepertory`='[\"15\",\"15\",\"15\",\"15\",\"15\",\"15\",\"15\",\"15\",\"15\"]',`images`='[\".\\/Uploads\\/Product\\/2017-08-21\\/599ac5a81d3d9.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599ac5a81eb4a.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599ac5a81fed2.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599ac5a8375d7.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599ad2769f7eb.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599ad276a7cbd.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599ad276aa3cd.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599ad276ac30e.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599ad276ade66.jpg\"]',`thumb_img`='[\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599ac5a81d3d9.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599ac5a81eb4a.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599ac5a81fed2.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599ac5a8375d7.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599ad2769f7eb.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599ad276a7cbd.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599ad276aa3cd.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599ad276ac30e.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599ad276ade66.jpg\"]',`water_img`='[\".\\/Uploads\\/Product\\/2017-08-21\\/water_599ac5a81d3d9.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599ac5a81eb4a.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599ac5a81fed2.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599ac5a8375d7.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599ad2769f7eb.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599ad276a7cbd.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599ad276aa3cd.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599ad276ac30e.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599ad276ade66.jpg\"]',`time`='2017-08-22 12:42:19' WHERE `id` = 69 [ RunTime:0.0000s ]
+
+[ 2017-08-22T12:42:19+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT product.*,category.name FROM `product` LEFT JOIN category ON product.category = category.id  ORDER BY time DESC LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:42:48+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/68/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `category` WHERE ( `id`=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:43:12+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/68/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `product` SET `title`='秋装新款时尚皮衣机车短外套',`price`='888',`promotion_price`='666',`thickness`='[\"\\u5e38\\u89c4\",\"\\u8d85\\u539a\"]',`thickrepertory`='[\"124\",\"124\"]',`size`='[\"S\",\"M\",\"L\",\"XL\"]',`sizerepertory`='[\"12\",\"12\",\"18\",\"12\"]',`texture`='粘胶纤维(粘纤)86.6%',`article_number`='M8561J153',`trademark`='MaxMartin/玛玛绨',`outside_sleeve`='长袖',`buckle`='单排扣',`applicable_age`='25-29周岁',`distribution_channel`='纯电商(只在线上销售)',`model`='直筒',`combining_form`='单件',`collar`='西装领',`pattern`='字母',`annual_seasons`='2017年秋季',`style`='街头',`clothes_length`='短款',`sleeve_style`='常规',`technology`='贴布',`color`='黑色',`category`='10',`des`='得分为契机偶发的文件',`colorrepertory`='[\"1\",\"15\",\"5\",\"1\",\"17\",\"56\",\"55\"]',`images`='[\".\\/Uploads\\/Product\\/2017-08-21\\/599aade4c4bc0.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aade4cb921.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aade4cd092.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aade4cf7a2.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aade4d12fb.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aade4d3623.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aade4d4d93.jpg\"]',`thumb_img`='[\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aade4c4bc0.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aade4cb921.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aade4cd092.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aade4cf7a2.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aade4d12fb.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aade4d3623.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aade4d4d93.jpg\"]',`water_img`='[\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aade4c4bc0.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aade4cb921.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aade4cd092.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aade4cf7a2.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aade4d12fb.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aade4d3623.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aade4d4d93.jpg\"]',`time`='2017-08-22 12:43:12' WHERE `id` = 68 [ RunTime:0.0000s ]
+
+[ 2017-08-22T12:43:12+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT product.*,category.name FROM `product` LEFT JOIN category ON product.category = category.id  ORDER BY time DESC LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-08-22T12:43:20+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/67/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product` WHERE `id` = 67 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `category` WHERE ( `id`=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-22T12:43:48+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/67/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product` WHERE `id` = 67 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `product` SET `title`='秋装新款时尚皮衣机车短外套',`price`='888',`promotion_price`='666',`thickness`='[\"\\u5e38\\u89c4\",\"\\u8d85\\u539a\"]',`thickrepertory`='[\"123\",\"124\"]',`size`='[\"S\",\"M\",\"L\",\"XL\"]',`sizerepertory`='[\"26\",\"27\",\"27\",\"89\"]',`texture`='粘胶纤维(粘纤)86.6%',`article_number`='M8561J153',`trademark`='MaxMartin/玛玛绨',`outside_sleeve`='长袖',`buckle`='单排扣',`applicable_age`='25-29周岁',`distribution_channel`='纯电商(只在线上销售)',`model`='直筒',`combining_form`='单件',`collar`='西装领',`pattern`='字母',`annual_seasons`='2017年秋季',`style`='街头',`clothes_length`='短款',`sleeve_style`='常规',`technology`='贴布',`color`='黑色',`category`='9',`des`='水电费搜集东风破位',`colorrepertory`='[\"57\",\"6\",\"5\",\"58\",\"7\",\"6\"]',`images`='[\".\\/Uploads\\/Product\\/2017-08-21\\/599aad5d2afc2.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aad5d2c732.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aad5d2e28b.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aad5d34434.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aad5d35f8d.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aad5d37ae5.jpg\"]',`thumb_img`='[\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad5d2afc2.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad5d2c732.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad5d2e28b.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad5d34434.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad5d35f8d.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad5d37ae5.jpg\"]',`water_img`='[\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad5d2afc2.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad5d2c732.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad5d2e28b.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad5d34434.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad5d35f8d.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad5d37ae5.jpg\"]',`time`='2017-08-22 12:43:48' WHERE `id` = 67 [ RunTime:0.0010s ]
+
+[ 2017-08-22T12:43:49+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT product.*,category.name FROM `product` LEFT JOIN category ON product.category = category.id  ORDER BY time DESC LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:43:54+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/66/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product` WHERE `id` = 66 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `category` WHERE ( `id`=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:44:16+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/66/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product` WHERE `id` = 66 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `product` SET `title`='秋装新款时尚皮衣机车短外套',`price`='888',`promotion_price`='666',`thickness`='[\"\\u5e38\\u89c4\",\"\\u8d85\\u539a\"]',`thickrepertory`='[\"123\",\"124\"]',`size`='[\"S\",\"M\",\"L\",\"XL\"]',`sizerepertory`='[\"26\",\"7\",\"28\",\"89\"]',`texture`='粘胶纤维(粘纤)86.6%',`article_number`='M8561J153',`trademark`='MaxMartin/玛玛绨',`outside_sleeve`='长袖',`buckle`='单排扣',`applicable_age`='25-29周岁',`distribution_channel`='纯电商(只在线上销售)',`model`='直筒',`combining_form`='单件',`collar`='西装领',`pattern`='字母',`annual_seasons`='2017年秋季',`style`='街头',`clothes_length`='短款',`sleeve_style`='常规',`technology`='贴布',`color`='黑色',`category`='8',`des`='所谓的无穷的海外IQ',`colorrepertory`='[\"15\",\"17\",\"16\",\"16\",\"58\",\"57\"]',`images`='[\".\\/Uploads\\/Product\\/2017-08-21\\/599aad07870d1.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aad078e9ea.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aad07910fb.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aad0793fdc.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aad0795f1c.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aad0797e5d.jpg\"]',`thumb_img`='[\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad07870d1.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad078e9ea.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad07910fb.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad0793fdc.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad0795f1c.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aad0797e5d.jpg\"]',`water_img`='[\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad07870d1.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad078e9ea.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad07910fb.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad0793fdc.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad0795f1c.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aad0797e5d.jpg\"]',`time`='2017-08-22 12:44:16' WHERE `id` = 66 [ RunTime:0.0010s ]
+
+[ 2017-08-22T12:44:16+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT product.*,category.name FROM `product` LEFT JOIN category ON product.category = category.id  ORDER BY time DESC LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:44:21+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/65/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product` WHERE `id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `category` WHERE ( `id`=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-22T12:44:48+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/update/id/65/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `product` WHERE `id` = 65 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `product` SET `title`='秋装新款时尚皮衣机车短外套',`price`='888',`promotion_price`='666',`thickness`='[\"\\u5e38\\u89c4\",\"\\u8d85\\u539a\"]',`thickrepertory`='[\"123\",\"124\"]',`size`='[\"S\",\"M\",\"L\",\"XL\"]',`sizerepertory`='[\"6\",\"27\",\"28\",\"89\"]',`texture`='粘胶纤维(粘纤)86.6%',`article_number`='M8561J153',`trademark`='MaxMartin/玛玛绨',`outside_sleeve`='长袖',`buckle`='单排扣',`applicable_age`='25-29周岁',`distribution_channel`='纯电商(只在线上销售)',`model`='直筒',`combining_form`='单件',`collar`='西装领',`pattern`='字母',`annual_seasons`='2017年秋季',`style`='街头',`clothes_length`='短款',`sleeve_style`='常规',`technology`='贴布',`color`='黑色',`category`='7',`des`='撒娇的后果is匟得问设定',`colorrepertory`='[\"15\",\"5\",\"6\",\"16\",\"17\",\"17\",\"18\",\"57\",\"18\"]',`images`='[\".\\/Uploads\\/Product\\/2017-08-21\\/599aac8c2b3d8.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aac8c2d318.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aac8c2ea89.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aac8c301f9.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aac8c31d52.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aac8c330da.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aac8c34c32.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aac8c3772b.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/599aac8c39a53.jpg\"]',`thumb_img`='[\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aac8c2b3d8.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aac8c2d318.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aac8c2ea89.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aac8c301f9.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aac8c31d52.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aac8c330da.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aac8c34c32.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aac8c3772b.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/thumb_599aac8c39a53.jpg\"]',`water_img`='[\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aac8c2b3d8.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aac8c2d318.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aac8c2ea89.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aac8c301f9.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aac8c31d52.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aac8c330da.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aac8c34c32.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aac8c3772b.jpg\",\".\\/Uploads\\/Product\\/2017-08-21\\/water_599aac8c39a53.jpg\"]',`time`='2017-08-22 12:44:48' WHERE `id` = 65 [ RunTime:0.0010s ]
+
+[ 2017-08-22T12:44:48+08:00 ] 127.0.0.1 /think/index.php/Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `meun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `meun` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=16 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=21 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=30 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=37 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=40 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `meun` WHERE ( `pid`=45 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT product.*,category.name FROM `product` LEFT JOIN category ON product.category = category.id  ORDER BY time DESC LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

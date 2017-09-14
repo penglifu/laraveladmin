@@ -1,0 +1,125 @@
+
+<title>品牌介绍</title>
+	<!--banner_ad 横幅轮播图-->
+	<div class="banner_ad">
+
+		<div class="banner" id="banner">
+			<div class="pages" data-scro="list">
+				<ul>
+				   <foreach name="list2" item="v">
+					<li class="item" style="left: 0px;"><img src="__ROOT__/{$v.images}"></li>
+				   </foreach>
+				</ul>
+			</div>
+
+			<div class="controler" data-scro="controler">
+				<b class="down"></b> <b></b> <b></b>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<!--页面内容-->
+	<div class="content">
+		<!--内容背景为第一种的时候 -->
+		<div class="content_type_one">
+
+			<!--为内容里面的内容-->
+			<div class="content_body">
+				<div class="background_orange"></div>
+				<div class="background_gray"></div>
+				<!--侧导航-->
+				<div class="kongzhi">
+
+					<div class="sidebar">
+						<div class="sidebar_top">
+
+
+							<div class="sidebar_title">
+								<p class="chinese">品牌介绍</p>
+								<p class="english">Brand introduction</p>
+							</div>
+
+
+							<div class="sidebar_list">
+
+								<ul>
+									<foreach name="category" item="v">
+									    <if condition="$id eq $v['id']">
+									    <li class="list_inthis"><a href="{:U('BrandIntroduction/BrandIntroduction',array('id'=>$v['id']))}" class="list_a_inthis">{$v.name}</a></li>
+									    <else />
+									    <li><a href="{:U('BrandIntroduction/BrandIntroduction',array('id'=>$v['id']))}">{$v.name}</a></li>
+									    </if>
+									</foreach>
+									<span class="clear_float"></span>
+								</ul>
+							</div>
+
+							<div class="sidebar_title sidebar_title_margin">
+								<p class="chinese">联系我们</p>
+								<p class="english">contact us</p>
+							</div>
+
+
+
+						</div>
+
+
+						<div class="sidebar_bottom">
+							<p class="onlinefirst">在线客服一：QQ{$list1.servicea}</p>
+							<p class="onlinesecend">在线客服二：QQ{$list1.serviceb}</p>
+							<p class="telphone">联系电话：{$list1.phone}</p>
+							<p class="email">邮箱：{$list1.email}</p>
+						</div>
+
+
+
+					</div>
+
+					<!--内容的右侧-->
+					<div class="content_body_right">
+						<div class="right_title">
+							<span class="titlename">品牌介绍</span> <span
+								class="current_location">当前位置>品牌介绍</span> <span
+								class="clear_float"></span>
+						</div>
+
+
+						<div class="introduces">
+							<div class="introduces_img">
+								<img src="__ROOT__/{$list['images'][0]}" />
+							</div>
+							<p class="introduces_text">{$list.contentone}</p>
+							<div class="clear_float"></div>
+						</div>
+
+						<div class="introduces">
+							<div class="introduces_img">
+								<img src="__ROOT__/{$list['images'][1]}" />
+							</div>
+							<p class="introduces_text">{$list.contenttwo}</p>
+							<div class="clear_float"></div>
+						</div>
+
+
+					</div>
+					<div class="clear_float"></div>
+
+
+
+
+
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+

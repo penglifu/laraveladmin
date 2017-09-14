@@ -1,0 +1,110 @@
+
+
+
+<title>订单失败</title>
+
+
+	<!--页面内容-->
+	<div class="content">
+		<!--内容背景为第二种的时候 -->
+		<div class="content_type_two">
+
+			<!--为内容里面的内容-->
+			<div class="content_body">
+				<div class="background_orange"></div>
+				<div class="background_coffee "></div>
+				<div class="kongzhi">
+					<!--侧导航-->
+					<div class="sidebar">
+						<div class="sidebar_top">
+
+
+							<div class="sidebar_title">
+								<p class="chinese">会员中心</p>
+								<p class="english">Brand introduction</p>
+							</div>
+
+
+							<div class="sidebar_list">
+
+								<ul class="list">
+								<foreach name="side" item="v" >
+									 
+									   <if condition="ACTION_NAME eq $v['en']" > 
+									          <if condition="$v.he eq 1">
+									          <li class="list_inthis"><a href="__MODULE__/{$v.url}" class="list_a_inthis">{$v.name}</a></li>
+									          
+									          </if>
+									          
+									        
+									    <else />
+									         <li><a href="__MODULE__/{$v.url}">{$v.name}</a></li>    
+									   </if>
+									</if>   
+									</foreach>
+									<span class="clear_float"></span>
+								</ul>
+
+							</div>
+
+
+
+
+
+						</div>
+
+
+
+
+
+					</div>
+
+					<!--内容的右侧-->
+					<div class="content_body_right">
+						<div class="right_title">
+							<span class="titlename">订单提交失败</span> <span
+								class="current_location">当前位置 >会员中心</span> <span
+								class="clear_float"></span>
+						</div>
+
+						<div class="order_submit_fail">
+							<p class="guide">
+								<a>查看购物车</a><a>填写和确认地址订单</a><a class="inthis">提交订单失败</a>
+							</p>
+							<p class="hint">
+								<span class="hint_img"></span><span class="success">订单提交失败</span>
+							</p>
+							<p class="fail_info">订单不存在或参数错误</p>
+							<p class="link_back">
+								<a href="{:U('MemberCenter/MakeSureTheOrderAndTheAddress',array('id' =>$id))}" class="order_again">请返回重新提交</a>
+                                <a href="{:U('Index/index')}" class="to_index">去首页</a>
+							</p>
+
+						</div>
+
+
+
+
+					</div>
+
+					<div class="clear_float"></div>
+
+
+
+
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+    <<script type="text/javascript">
+     $(".list").children().eq(5).attr("style","display:none")
+    </script>
+
+

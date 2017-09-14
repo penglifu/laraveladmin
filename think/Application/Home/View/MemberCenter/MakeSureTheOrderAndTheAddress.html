@@ -1,0 +1,327 @@
+
+
+<title>收货地址</title>
+	<!--页面内容-->
+	<div class="content">
+		<!--内容背景为第二种的时候 -->
+		<div class="content_type_two">
+
+			<!--为内容里面的内容-->
+			<div class="content_body">
+				<div class="background_orange"></div>
+				<div class="background_coffee "></div>
+				<div class="kongzhi">
+
+					<!--侧导航-->
+					<div class="sidebar">
+						<div class="sidebar_top">
+
+
+							<div class="sidebar_title">
+								<p class="chinese">会员中心</p>
+								<p class="english">Brand introduction</p>
+							</div>
+
+
+							<div class="sidebar_list ">
+
+								<ul>
+								<foreach name="side" item="v" >
+									 <if condition="$v.he eq 0">
+									   <eq name="Think.ACTION_NAME" value="$v['en']" > 
+									        
+									          <li class="list_inthis"><a href="__MODULE__/{$v.url}" class="list_a_inthis">{$v.name}</a></li>
+									     
+									          
+									        
+									    <else />
+									         <li><a href="__MODULE__/{$v.url}">{$v.name}</a></li>    
+									   </eq>
+									</if>   
+									</foreach>
+									<span class="clear_float"></span>
+								</ul>
+
+							</div>
+
+
+
+
+
+						</div>
+
+
+
+
+
+					</div>
+
+					<!--内容的右侧-->
+					<div class="content_body_right">
+						<div class="right_title">
+							<span class="titlename">购买记录</span> <span
+								class="current_location">当前位置 >会员中心</span> <span
+								class="clear_float"></span>
+						</div>
+
+						<div class="makesure_order_add">
+							<p class="guide">
+								<a>查看购物车</a><a class="inthis">填写和确认地址订单</a><a>提交订单成功</a>
+							</p>
+
+							<form method="post" action="">
+								<div class="sure_add">
+									<p class="address_text">确认收货地址</p>
+
+                                  <volist name="address" id="v" >
+                                    
+									<div class="address_box">
+										<div class="show">
+											<input type="radio"  name="makesure_address" />
+                                            <span>{$v.address}</span>
+                                                                                                                                   （<span>{$v.name}</span> 收）
+                                            <span>{$v.phone}</span>
+										</div>
+
+										<div class="hidden">
+											<p>
+												<span class="to_smwhere">寄送至</span>
+												
+                                                <input type="radio"	id="address{$i}"  name="makesure_address" value="{$v.id}" />
+                                                <span>{$v.address}</span>
+											</p>
+											<p class="user_info">
+											     
+												（<span>{$v.name}</span> 收）
+												 <span>{$v.phone}</span>
+											</p>
+											<p class="change_address">
+												<a href="{:U('MemberCenter/ModificationAddress',array('id'=>$v['id']))}">修改本地址</a>
+												<a class="delete">删除</a>
+												<input type="hidden"  value="{$v.id}" class="de" />
+											</p>
+										</div>
+									</div>
+								   
+                                 </volist>
+
+									<p class="user_other_address">
+										<a href="{:U('MemberCenter/ModificationAddress')}">使用其他地址</a>
+										
+									</p>
+								</div>
+
+								<div class="order_info">
+									<p class="info_text">确认订单信息</p>
+									<p class="title">
+										<span class="pro_show">宝贝</span>
+                                        <span class="price">单价</span>
+                                        <span class="number">数量</span>
+                                        <span class="subtotal">小计（元）</span>
+									</p>
+								<foreach  name="list" item="v">	
+                                <if  condition="!empty($v['id'])">
+									<div class="list_info_content">
+										<div class="content_left">
+											<div class="img">
+											    <input type="hidden" name="color[]"  value="{$v.colorvalue}"/>
+											    <input type="hidden" name="shopping_id[]"  value="{$v.id}"  class="id1"/>
+											    <input type="hidden" name="product_id[]"  value="{$v.product_id}"/>
+											    <input type="hidden" name="ordernum[]"  value="{$v.ordernum}"/>
+												<img src="__ROOT__/{$v['image']}" />
+											</div>
+											<div class="info_text">{$v.des}</div>
+											
+											<span class="price  pricenum">{$v.promotion_price}</span> 
+											
+                                            <span class="numbers_override" id="makesure_page">
+                                            <span ></span>
+                                            <input value="{$v.number}" min="1" type="text" class="inputnum" name="number[]" readonly="readonly" />
+                                            <span ></span>
+                                            </span> 
+                                            <span class="clear_float"></span>
+										</div>
+
+										<div class="content_mid">
+                                            
+											<a class="curr_price curr_price1">{$v.price}</a> 
+                                            <select name="chuxiao">
+												<option>以省200元;卖家促销1</option>
+												<option>以省200元;卖家促销2</option>
+												<option>以省200元;卖家促销3</option>
+											</select>
+										</div>
+
+										<div class="clear_float"></div>
+
+
+									</div>
+								  <else />
+								    <div class="list_info_content">
+										<a class="curr_price"> 未购买商品！</a> 
+
+									</div>
+                                  </if>
+                               </foreach>
+									<p class="givemess_toseller">
+										给卖家留言：<input type="text" name="maseege" />
+									</p>
+									<p class="discount">
+										店铺优惠： 
+                                        <select class="s_discount" name="discount">
+											<option>买满一百减1</option>
+											<option>买满一百减2</option>
+											<option>买满一百减3</option>
+										</select>
+
+									</p>
+
+
+									<p class="discount">
+										运送方式: 
+                                        <select name="peishong">
+											<option>普通配送&nbsp;快递 免邮1</option>
+											<option>普通配送&nbsp; 快递 免邮2</option>
+											<option>普通配送&nbsp; 快递 免邮3</option>
+										</select>
+									</p>
+									<p class="total">
+										店铺合计：<span>￥<a class="totals">{$totals}</a>
+										<input type="hidden" name="price" class="totals" value="{$totals}"/>
+										</span>
+									</p>
+									<p class="submit">
+										<input type="submit" value="提交订单" class="submit1" />
+									</p>
+
+
+
+
+								</div>
+
+
+							</form>
+
+
+						</div>
+
+
+
+
+					</div>
+
+					<div class="clear_float"></div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+		  <script>
+		  $(".add").click(function(){
+			var num=$(this).prev().val();
+			  num++;
+			//alert(num);
+			var price=$(".pricenum").html();
+			//alert(price)
+			var pricenumber=num*price ;
+			//alert(pricenumber);
+			$(this).parent().parent().siblings(".content_mid").children(".curr_price").html(pricenumber);
+			
+			/* $(".totals").html(pricenumber);  */
+			totals();  
+			  
+		  })
+		  
+		  
+		   $(".reduce").click(function(){
+			var num=$(this).next().val();
+			  num--;
+			//alert(num);
+			var price=$(".pricenum").html();
+			
+			var pricenumber=num*price ;
+			//alert(pricenumber);
+			
+			$(this).parent().parent().siblings(".content_mid").children(".curr_price").html(pricenumber);
+			  
+			totals(); 
+		  })
+		  
+		   $("input[type='submit']").click(function(){
+			 
+			 var status = $("input[type='radio']").is(":checked");
+			 if(!status){
+				 alert("请选择地址");
+				 return false;
+			 }
+			 
+			 
+		 }) 
+		   /* function totals(){
+			    	var count=0;
+			    	var length = $("input[class='inputnum']").length;
+			    
+			    	//循环添加选中的价格累计 
+			    	for(var i=0;i<length;i++){
+			    		//i为下标 从零开始 ，长度从一开始  所以下标小于长度 
+			    	   count += parseInt($(".curr_price1").eq(i).html());
+			    	  //alert($(".curr_price1").eq(i).html())
+			    	}
+			    	//alert(count);
+	    	      
+	    	       $(".totals").html(count);
+	    	       $(".totals").attr("value",count);
+	    	      
+		    	}
+		  totals(); */
+		 
+		  
+		  
+		  
+		   $(".delete").click(function(){
+	    	   var id=$(this).siblings(".de").val();
+	    	   var url="{:U('MemberCenter/MakeSureTheOrderAndTheAddress')}";
+	    	   $.ajax({
+				   //传参类型：input框一般为post
+		              type:"post",
+		              url:url,//访问页面的超链接地址
+		              data:{id:id},//传参的数据，验证码
+		              success:function(msg){
+		            	
+		            	  if(msg==0){
+		            	    alert("删除成功！ ");  
+		            	  }else {
+		            	    alert("删除失败！ ");    
+		            		  
+		            	  }
+				   
+		              }
+				   
+			   }) 
+	    	   
+	    	  
+	    	   
+	       })
+	       
+	      $(".submit1").click(function(){ 
+	    	  var id=$(".id1").val();
+	    	 if(!id){
+	    		 alert("请添加选择商品 ");
+	    		return false; 
+	    	 }
+	    	  
+	    	  
+	      })
+	       
+	       
+	       
+		  </script>
+		
+
+

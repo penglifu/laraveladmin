@@ -1,0 +1,60 @@
+
+    <title>用户查看</title>
+    <div class="content-box">
+      <!-- Start Content Box -->
+      <div class="content-box-header">
+        <h3>Content box</h3>
+        <ul class="content-box-tabs">
+            <!-- href must be unique and match the id of target div -->
+            <li><a href="#tab2" class="default-tab">Forms</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <!-- End .content-box-header -->
+      <div class="content-box-content">    
+        <div class="tab-content default-tab" id="tab2">
+          <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+            <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+           <style>
+            .img{ width:100px;height:100px; }
+           </style>
+            <p>
+              <label>用户名</label>
+              <span><img  src='__ROOT__{$arr.images}'  alt="头像" class="img" ></span>
+            </p>  
+            <p>
+              <label>用户名</label>
+              <input class="text-input small-input" type="text"  name="username"   value="{$arr.username}"  readonly="readonly"/>
+            </p>  
+            
+            <p>
+              <label>email</label>
+              <input class="text-input small-input" type="text"  name="email"   value="{$arr.email}"  readonly="readonly"/>
+            </p> 
+             <p>
+              <label>qq</label>
+              <input class="text-input small-input" type="text"  name="qq"   value="{$arr.qq}"  readonly="readonly"/>
+            </p>
+            <p>
+              <label>phone</label>
+              <input class="text-input small-input" type="text"  name="phone"   value="{$arr.phone}"  readonly="readonly"/>
+            </p>
+            <p>
+              <label>sex</label>
+              <if condition="$arr['sex']==2">
+               <input class="text-input small-input" type="text"     value="女"  readonly="readonly"/>
+              <else/> 
+               <input class="text-input small-input" type="text"     value="男"  readonly="readonly"/>
+              </if>
+            </p>
+            </fieldset>
+            <div class="clear"></div>
+            <!-- End .clear -->
+          </form>
+        </div>
+        <!-- End #tab2 -->
+      </div>
+      <!-- End .content-box-content -->
+    </div>
+    <!-- End .content-box -->
